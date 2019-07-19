@@ -47,10 +47,11 @@ header .menu .logo .text-logo h1{
 /*-- MENU MOBILE--*/
 
 nav.lista-menu{
-  margin: 0 auto;
+  margin: 0;
   width: 35px;
   height: 26px;
   cursor: pointer;
+  margin-left: auto;
 }
 nav.lista-menu .bar,
 nav.lista-menu .bar:after,
@@ -100,20 +101,23 @@ nav.lista-menu .bar.animate:before {
 
 .color-header{
     background: #0A123A;
+    transition: all 0ms 300ms;
 }
 /* Fin Animación del menu movil */
 nav.lista-menu ul{
     list-style: none;
     position: absolute;
-    top: 0;
+    top: 75px;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 75px);
     background:#0A123A;
-    margin: 75px 0 0 0;
+    margin: 0 0 0 0;
+    /* margin: 75px 0 0 0; */
     padding: 0;
-    display: none;
     font-size: 24px;
+    font-weight: regular;
+    display: none;
 }
 
 nav.lista-menu ul li{
@@ -122,12 +126,11 @@ width: 180px;
 text-align: center;
 }
 
+nav.lista-menu ul li:first-child{
+    margin-top: 57px;
+}
+
 nav.lista-menu ul li a{
 text-decoration: none;
 color: white;
-
-
-}
-nav.lista-menu ul li:first-child{
-    margin-top: 57px;
 }
