@@ -1,0 +1,131 @@
+h1{
+    font-family: 'Bookman Old Style', arial;;
+}
+h2,h3,h4,p,a{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* LOGO */
+header{
+    height: 75px;
+    background: #172983;
+}
+header .menu{
+    display: flex;
+   align-items: center;
+}
+
+header .menu .logo{
+width: 233px;
+display: flex;
+align-items: center;
+margin-left: 16px;
+}
+header .menu .logo .img-logo{
+    margin: 0;
+    width: 53px;
+    display: inline-block;
+    
+}
+header .menu .logo .img-logo img{
+width: 53px;
+}
+header .menu .logo .text-logo{
+    display: inline-block;
+    margin-left: 14px;
+}
+header .menu .logo .text-logo h1{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    
+}
+/* MENU */
+/*-- MENU MOBILE--*/
+
+nav.lista-menu{
+  margin: 0 auto;
+  width: 35px;
+  height: 26px;
+  cursor: pointer;
+}
+nav.lista-menu .bar,
+nav.lista-menu .bar:after,
+nav.lista-menu .bar:before {
+    width: 35px;
+    height: 3px;
+    
+}
+
+/* Animación del menu movil */
+nav.lista-menu .bar {
+    position: relative;
+    transform: translateY(9px);
+    background: white;
+    transition: all 0ms 300ms;
+}
+
+nav.lista-menu .bar.animate {
+    background: rgba(255, 255, 255, 0);
+}
+nav.lista-menu .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+nav.lista-menu .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+nav.lista-menu .bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+nav.lista-menu .bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.color-header{
+    background: #0A123A;
+}
+/* Fin Animación del menu movil */
+nav.lista-menu ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background:#0A123A;
+    margin: 75px 0 0 0;
+    padding: 0;
+    display: none;
+}
+
+nav.lista-menu ul li{
+margin: 45px auto 0  auto;
+width: 180px;
+text-align: center;
+}
+
+nav.lista-menu ul li a{
+text-decoration: none;
+color: white;
+
+}
+nav.lista-menu ul li:first-child{
+    margin-top: 57px;
+}
