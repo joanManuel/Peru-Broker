@@ -124,13 +124,14 @@ nav.lista-menu ul{
 }
 
 nav.lista-menu ul li{
-margin: 45px auto 0  auto;
+margin: 35px auto 0  auto;
 width: 180px;
 text-align: center;
+padding: 10px;
 }
 
 nav.lista-menu ul li:first-child{
-    margin-top: 57px;
+    margin-top: 47px;
 }
 
 nav.lista-menu ul li a{
