@@ -71,6 +71,7 @@ nav.lista-menu .bar {
 
 nav.lista-menu .bar.animate {
     background: rgba(255, 255, 255, 0);
+   
 }
 nav.lista-menu .bar:before {
     content: "";
@@ -101,7 +102,7 @@ nav.lista-menu .bar.animate:before {
 
 .color-header{
     background: #0A123A;
-    transition: all 0ms 300ms;
+    transition: all 1s;
 }
 /* Fin Animación del menu movil */
 nav.lista-menu ul{
@@ -117,6 +118,7 @@ nav.lista-menu ul{
     padding: 0;
     font-size: 24px;
     font-weight: regular;
+    
     display: none;
 }
 
