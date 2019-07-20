@@ -4,7 +4,7 @@ body{
 h1{
     font-family: 'Bookman Old Style', arial;;
 }
-h2,h3,h4,p,a{
+h2,h3,h4,p,a,span{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -126,6 +126,7 @@ nav.lista-menu .bar.animate:before {
     transition: all 1s;
 }
 /* Fin Animación del menu movil */
+
 nav.lista-menu ul{
     list-style: none;
     position: fixed;
@@ -181,4 +182,48 @@ section.hero .degradado1{
    height: 100%;
    top:0;
    background: rgba(10, 18, 58, 0.05);
+}
+section.hero .idioma{
+    position: absolute;
+    top: 90px;
+    right: 50px;
+}
+section.hero .idioma{
+    color: white;
+    font-weight: bold;
+}
+section.hero .idioma .es{
+
+}
+section.hero .idioma .es::before{
+content: url(../img/es.png);
+margin-right: 5px;
+font-size: 12px;
+}
+
+section.hero .idioma .en{
+}
+section.hero .idioma .en::before{
+    content: url(../img/en.png);
+    margin-right: 5px;
+}
+section.hero .btn-up{
+    position: fixed;
+    bottom: 17px;
+    width: 48px;
+    height: 45px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.940);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.hero .btn-up .icon-up{  
+    width: 40px;   
+}
+section.hero .chat{
+
 }
