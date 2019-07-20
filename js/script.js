@@ -39,7 +39,7 @@ var tabs = document.querySelector('.tabs-buttons .swiper-wrapper');
 var tabButtons = new Swiper('.tabs-buttons', {
   slidesPerView: 'auto',
   freeMode: true,
-  scrollbar: '.swiper-scrollbar',
+  // scrollbar: '.swiper-scrollbar',
   mousewheelControl: true,
   onTap: function(swiper, event) {
     if ( event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab') ) {

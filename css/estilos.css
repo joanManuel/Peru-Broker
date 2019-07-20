@@ -270,9 +270,9 @@ section.hero .chat img.messenger{
         justify-content: space-between;
         padding-left: 0;
     }
-    .swiper-scrollbar{
+    /* .swiper-scrollbar{
        display: none;
-    }
+    } */
     .tabs-buttons .swiper-slide {
         width: auto;
         height: auto;
