@@ -10,6 +10,13 @@ h2,h3,h4,p,a,span{
 h2,h3{
     font-weight: bold;
 }
+h2{
+    font-size: 26px;
+    text-align: center;
+}
+h3{
+ font-size: 22px;
+}
 
 .col{
     margin: 0;
@@ -220,9 +227,6 @@ section.hero .btn-up{
     background: rgba(255, 255, 255, 0.940);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     z-index: 90;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     text-align: center;
     display: none;
 }
@@ -254,12 +258,9 @@ section.hero .chat img.messenger{
 /*NOSOTROS*/
 
     /*TABS*/
-    .tabs-content .swiper-container {
+    .swiper-container {
         width: 100%;
         height: 300px;
-    }
-    .swiper-container::-webkit-scrollbar{
-        display: none;
     }
     .tabs-content .swiper-slide {
     /* padding: 1rem 2rem;  */
@@ -276,7 +277,7 @@ section.hero .chat img.messenger{
     .tabs-buttons .swiper-slide {
         width: auto;
         height: auto;
-        padding: 1rem 2rem;
+        /* padding: 1rem 2rem; */
         cursor: pointer;
         border-bottom: 2px solid transparent;
     }
@@ -287,8 +288,17 @@ section.hero .chat img.messenger{
     /*FIN TABS*/
     
     .nosotros ul li{
-        list-style: none;
-        
+        list-style: none; 
+        padding: 10px 22.5px;   
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: medium;
+        margin: 0 auto;
+        color: #111F65; 
+    }
+    .nosotros .swiper-container .swiper-wrapper .swiper-slide>p{
+       text-align: justify;
+        padding: 16px 10px;
     }
 
 /*FIN NOSOTROS*/
