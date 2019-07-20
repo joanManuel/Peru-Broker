@@ -221,9 +221,12 @@ section.hero .btn-up{
     justify-content: center;
 }
 
-section.hero .btn-up .icon-up{  
+section.hero .btn-up img.icon-up{  
     width: 40px;   
 }
 section.hero .chat{
+
+}
+section.hero .chat img.messenger{
 
 }
