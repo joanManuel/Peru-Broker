@@ -122,7 +122,7 @@ nav.lista-menu .bar.animate:before {
 }
 
 .color-header{
-    background: #0A123A;
+    background: #0A123A!important;
     transition: all 1s;
 }
 /* Fin Animación del menu movil */

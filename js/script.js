@@ -1,7 +1,7 @@
 (function () {
 	$('nav.lista-menu').on('click', function() {
         $('.bar').toggleClass('animate'),
-        $('header').toggleClass('color-header');
+        $('header .menu').toggleClass('color-header');
 	})
 })();
 
