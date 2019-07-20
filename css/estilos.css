@@ -256,7 +256,7 @@ section.hero .chat img.messenger{
         height: 300px;
     }
     .tabs-content .swiper-slide {
-        /* padding: 1rem 2rem; */
+    /* padding: 1rem 2rem;  */
     }
     .tabs-buttons {
         height: auto;
@@ -265,6 +265,7 @@ section.hero .chat img.messenger{
     .tabs-buttons .swiper-wrapper {
         display: flex;
         justify-content: space-between;
+        padding-left: 0;
     }
     .tabs-buttons .swiper-slide {
         width: auto;
