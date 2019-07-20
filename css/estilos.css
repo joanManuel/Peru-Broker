@@ -223,10 +223,25 @@ section.hero .btn-up{
 
 section.hero .btn-up img.icon-up{  
     width: 40px;   
+
 }
 section.hero .chat{
+    position: fixed;
+    
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 132, 255, 1);
+    border-radius: 50%;
+    right: 20px;
+    bottom: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 95;
 
 }
 section.hero .chat img.messenger{
-
+    
+    
 }
