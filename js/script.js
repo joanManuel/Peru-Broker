@@ -16,21 +16,19 @@ $(document).ready(function() {
 
 // BOTON PARA SUBIR
 $(document).ready(function(){
- 
   $('.btn-up').click(function(){
-  $('body, html').animate({
-  scrollTop: '0px'
-  }, 300);
+    $('body, html').animate({
+    scrollTop: '0px'
+    }, 300);
   });
    
   $(window).scroll(function(){
-  if( $(this).scrollTop() > 0 ){
-  $('.btn-up').slideDown(300);
-  } else {
-  $('.btn-up').slideUp(300);
-  }
-  });
-   
+    if( $(this).scrollTop() > 0 ){
+      $('.btn-up').slideDown(300);
+      } else {
+      $('.btn-up').slideUp(300);
+      }
+    });
   });
 
 //SECCION NOSOTROS - TABS

@@ -211,6 +211,7 @@ section.hero .idioma .en::before{
     margin-right: 5px;
 }
 section.hero .btn-up{
+    
     position: fixed;
     bottom: 17px;
     width: 48px;
@@ -219,9 +220,11 @@ section.hero .btn-up{
     background: rgba(255, 255, 255, 0.940);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     z-index: 90;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
+    display: none;
 }
 
 section.hero .btn-up img.icon-up{  
@@ -270,9 +273,6 @@ section.hero .chat img.messenger{
         justify-content: space-between;
         padding-left: 0;
     }
-    /* .swiper-scrollbar{
-       display: none;
-    } */
     .tabs-buttons .swiper-slide {
         width: auto;
         height: auto;
