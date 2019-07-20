@@ -256,7 +256,7 @@ section.hero .chat img.messenger{
         height: 300px;
     }
     .tabs-content .swiper-slide {
-        padding: 1rem 2rem;
+        /* padding: 1rem 2rem; */
     }
     .tabs-buttons {
         height: auto;
@@ -278,8 +278,10 @@ section.hero .chat img.messenger{
         border-bottom-color: red;
     }
     /*FIN TABS*/
+    
     .nosotros ul li{
         list-style: none;
+        
     }
 
 /*FIN NOSOTROS*/
