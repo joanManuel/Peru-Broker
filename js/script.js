@@ -95,8 +95,6 @@ $(document).ready(function () {
           // centeredSlides: true,
         }
       }
-    // freeMode: true,
     
-    // mousewheelControl: true
   })
 });
