@@ -63,29 +63,31 @@ var tabContent = new Swiper('.tabs-content', {
     // lockClass
   },
 });
-/*
-var asd = new Swiper('.item', {
-  
-    // dragClass: '.swiper-slide-lock'
-  
-});
-*/
-/**SECCION STAFF */
-/*
-var staff = document.querySelector('.content-item');
-var tabButtons = new Swiper('.content-item', {
-  slidesPerView: 1,
-  freeMode: true,
-  
-  mousewheelControl: true
-});
-*/
+
 
 $(document).ready(function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.content-item', {
      slidesPerView: 'auto',
-          spaceBetween: 30,
+          spaceBetween: 20,
+          centeredSlides: true,
+      breakpoints:{
+       
+       320: {
+          // slidesPerView: 'auto',
+          // spaceBetween: 30,
+          // centeredSlides: true,
+        }
+      }
+    
+  })
+});
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var swiper = new Swiper('.content-item-clientes', {
+          slidesPerView: 'auto',
+          spaceBetween: 5,
           centeredSlides: true,
       breakpoints:{
        

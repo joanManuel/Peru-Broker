@@ -17,7 +17,9 @@ h2{
 h3{
  font-size: 22px;
 }
-
+section.nosotros h2{
+    margin-top: 40px;
+}
 .col{
     margin: 0;
     padding: 0;
@@ -267,9 +269,7 @@ section.nosotros::before{
     height: 7px;
     background: #F7F7F7;
 }
-section.nosotros h2{
-    margin-top: 44px;
-}
+
     /*TABS*/
     .swiper-container {
         width: 100%;
@@ -334,9 +334,7 @@ section.staff::before{
  height: 7px;
  background: #F7F7F7;
 }
-section.staff h2{
-    margin-top: 44px;
-}
+
 section.staff .item-staff{
 
 }
@@ -372,6 +370,9 @@ section.staff .item-staff span{
 /* FIN STAFF */
 
 /* SERVICIOS*/
+section.servicios .content-servicios{
+    padding: 0 20px 0 20px;
+}
 section.servicios::before{
     content: '';
     position: relative;
@@ -380,3 +381,55 @@ section.servicios::before{
     height: 7px;
     background: #F7F7F7;
 }
+section.servicios .content-servicios figure.productos{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+section.servicios .content-servicios figure.productos img{
+    display: inline;
+    max-width: 100%;
+}
+
+section.servicios .content-servicios figure.fletamento{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+section.servicios .content-servicios figure.fletamento img{
+    display: inline;
+    max-width: 100%;
+}
+
+
+/* FIN SERVICIOS*/
+
+
+/* CLIENTES*/
+section.clientes::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: #F7F7F7;
+}
+section.clientes .content-item-clientes{
+
+}
+section.clientes .content-item-clientes .item-clientes{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+section.clientes .content-item-clientes .item-clientes figure{
+    text-align: center;
+}
+section.clientes .content-item-clientes .item-clientes figure img{
+    
+}
+
+section.clientes .content-item-clientes .item-clientes p{
+    text-align: center;
+    font-size: 20px;
+}
+/* FIN CLIENTES*/
