@@ -50,8 +50,8 @@ var tabButtons = new Swiper('.tabs-buttons', {
 });
 
 var tabContent = new Swiper('.tabs-content', {
-  
-  setWrapperSize:true,
+
+  // setWrapperSize:true,
   autoHeight:true,
 
   onSlideChangeStart: function(swiper, event) {
