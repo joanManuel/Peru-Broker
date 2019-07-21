@@ -300,10 +300,56 @@ section.hero .chat img.messenger{
        text-align: justify;
         padding: 12px 16px;
     }
-/*FIN NOSOTROS*/
+
 
     section.nosotros img{
         width: 100%;
         height: auto;
     }
+/*FIN NOSOTROS*/
+
 /* STAFF */
+section.staff{
+
+}
+section.staff .item-staff{
+
+}
+section.staff .item-staff figure.img-staff{
+    
+text-align: center;
+}
+section.staff .item-staff figure.img-staff img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+section.staff .item-staff p{
+text-align: center;
+font-size: 16px;
+color: #000000;
+font-weight: regular;
+}
+section.staff .item-staff span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: regular;
+    color: #6470AC;
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.item-staff {
+    width: auto;
+    height: auto;
+    /* padding: 1rem 2rem; */
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+/* FIN STAFF */
