@@ -372,7 +372,7 @@ section.staff .item-staff span{
 /* FIN STAFF */
 
 /* SERVICIOS*/
-section::before{
+section.servicios::before{
     content: '';
     position: relative;
     display: block;
