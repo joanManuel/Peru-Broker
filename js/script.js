@@ -37,6 +37,7 @@ var tabs = document.querySelector('.tabs-buttons .swiper-wrapper');
 var tabButtons = new Swiper('.tabs-buttons', {
   slidesPerView: 'auto',
   freeMode: true,
+  
   // scrollbar: '.swiper-scrollbar',
   mousewheelControl: true,
   onTap: function(swiper, event) {
@@ -49,8 +50,13 @@ var tabButtons = new Swiper('.tabs-buttons', {
 });
 
 var tabContent = new Swiper('.tabs-content', {
+  
+  setWrapperSize:true,
+  autoHeight:true,
+
   onSlideChangeStart: function(swiper, event) {
     tabs.children[swiper.previousIndex].classList.remove('active');
     tabs.children[swiper.activeIndex].classList.add('active');
-  }
+    
+  },
 });
