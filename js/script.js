@@ -105,7 +105,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   
-    var map = L.map('map').setView([-12.126303, -77.016515], 20);
+    var map = L.map('map').setView([-12.126303, -77.016515], 17);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
