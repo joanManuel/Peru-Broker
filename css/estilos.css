@@ -460,10 +460,7 @@ section.reportes .content-reportes{
 section.reportes .content-reportes .table-responsive{
     overflow-y: auto;
 }
-section {
-    /* padding: 60px 0; */
-    min-height: 100vh;
-}
+
 .section_title {
 margin-bottom: 40px;
 }
