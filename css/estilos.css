@@ -521,6 +521,17 @@ section.reportes .content-reportes .table-responsive{
 .tables-page-section .table tr th {
     background: #f1f1f1;
 }
+
+section.reportes .content-reportes figure{
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    line-height: middle;
+}
+section.reportes .content-reportes figure img{
+ width: 100%;
+}
 /* FIN REPORTES*/
 
 /*SECCION DE CONTACTO*/
@@ -532,4 +543,18 @@ section.contacto::before{
     height: 7px;
     background: #F7F7F7;
 }
+
+section.contacto .content-mapa{
+    width: 100%;
+}
+section.contacto .content-mapa .map{
+    /* position: relative;
+    display: block; */
+    width: 100%;
+    height: 242px;
+}
+section.contacto .content-mapa .map .leaflet-pane{
+    /* position: relative; */
+}
+
 /*FIN DE CONTACTO*/

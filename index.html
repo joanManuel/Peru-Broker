@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>   
@@ -387,8 +390,8 @@
 
         <!-- tabla fishing reportes -->
         <div class="row">
-                <div class="col-sm-12">
-                    <h3>Fishing Report</h3>
+                <div class=" col-md-12 col-lg-6">
+                    <h3>Reportes</h3>
                     <div class="table-responsive fishing-report">
                         <table class="table">
                             <thead>
@@ -448,6 +451,11 @@
                         </table>
                     </div>
                 </div>
+                <div class="col">
+                    <figure>
+                        <img src="img/img_reportes.png" alt="">
+                    </figure>
+                </div>
             </div>
         <!-- fin tabla reportes -->
           </div>
@@ -459,14 +467,26 @@
 <!-- FIN REPORTES -->
     <section class="contacto">
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <h2>Contacto</h2>
+            </div>
+            <div class="col">
+                <h3>Mapa</h3>
+                <div class="content-mapa">
+                    <div id="map" class="map"></div>
+                </div>
+                <h3>Mapa</h3>
             </div>
         </div>
     </section>
-    
+    <footer>
+        Copyright
+    </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
     <!-- <script src="js/swiper.min.js"></script> -->
     </script>
     <script src="js/script.js"></script>
