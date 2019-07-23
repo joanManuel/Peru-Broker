@@ -20,6 +20,9 @@ h3{
 p{
     line-height: 22px;
 }
+a{
+    text-decoration: none;
+}
 section.nosotros h2{
     margin-top: 40px;
 }
@@ -552,8 +555,130 @@ section.contacto .content-mapa .map{
     width: 100%;
     height: 242px;
 }
-section.contacto .content-mapa .map .leaflet-pane{
-    /* position: relative; */
+section.contacto .content-info{
+   margin-top: 20px;
+    padding: 0 50px 0 50px;
+}
+section.contacto .content-info p{
+    font-size: 15px;
+    color: #0A123A;
+}
+section.contacto .content-info a{
+    font-size: 15px;
+    color: #0A123A;
+}
+section.contacto .content-info p.direccion::before{
+    content: url(../img/icon-direc.svg);
+    position: relative;
+    display: inline-block;
+    width: 12.47px;
+    height: 17.6px;
+    margin-right: 15px;
+    top: 5px;
+}
+section.contacto .content-info p.telefono::before{
+    content: url(../img/icon-telef.svg);
+    position: relative;
+    display: inline-block;
+    width: 17.7px;
+    height: 17.7px;
+    margin-right: 15px;
+    top: 5px;
+}
+section.contacto .content-info p.correo::before{
+    content: url(../img/icon-correo.svg);
+    position: relative;
+    display: inline-block;
+    width: 20.63px;
+    height: 16.5px;
+    margin-right: 20px;
+    top: 5px;
+}
+section.contacto .content-info p.fax::before{
+    content: url(../img/icon-fax.svg);
+    position: relative;
+    display: inline-block;
+    width: 18.78px;
+    height: 16.9px;
+    margin-right: 20px;
+    top: 5px;
+}
+section.contacto .content-info p.facebook::before{
+    content: url(../img/icon-facebook.svg);
+    position: relative;
+    display: inline-block;
+    width: 8.6px;
+    height: 16.67px;
+    margin-right: 15px;
+    top: 5px;
+}
+    /*FORMULARIO*/
+form.wpcf7-form{
+background: #F7F7F7;
+padding: 40px 0 40px 0;
+}
+form.wpcf7-form p{
+    margin-top: 20px;
+    width: 90%;
+    /* padding: 10px 0 10px 0; */
+    margin: 10px auto;
+    
+}
+form.wpcf7-form p:first-child{
+   
+}
+form.wpcf7-form p:last-child{
+    
+}
+form.wpcf7-form p label{
+    font-family: 'Roboto',serif;
+    color: #A8A9B1;
+    width: 100%;
+    
+}
+form.wpcf7-form p input{
+    width: 100%;
+    padding: 5px;
+}
+form.wpcf7-form p input[type=submit]{
+    background:#E2001A;
+    width: 150px;
+    height: 50;
+    font-size: 18px;
+    padding: 14px 50px;
+    margin: 40px auto;
+    display: block;
+    border: none;
+    color: white;
+} 
+form.wpcf7-form p textarea{
+    width: 100%;
+    
 }
 
 /*FIN DE CONTACTO*/
+
+/*FOOTER*/
+footer{
+background: #05091D;
+}
+footer p{
+    color: white;
+}
+footer .copy{
+
+}
+footer .copy p{
+
+}
+footer .create{
+
+}
+footer .create p{
+
+}
+footer .create p a{
+
+}
+
+/*FIN FOOTER*/
