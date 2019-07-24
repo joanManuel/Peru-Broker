@@ -614,7 +614,7 @@ section.contacto .content-info p.facebook::before{
     /*FORMULARIO*/
 form.wpcf7-form{
 background: #F7F7F7;
-padding: 40px 0 40px 0;
+padding: 40px 0 20px 0;
 }
 form.wpcf7-form p{
     margin-top: 20px;
