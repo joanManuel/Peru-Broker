@@ -34,7 +34,10 @@ section.nosotros h2{
     margin: 0;
     padding: 0;
 }
-
+.content{
+    padding: 0 0;
+    margin: 0;
+}
 /* LOGO */
 .content-header{
     
@@ -376,8 +379,8 @@ section.staff .item-staff span{
 /* FIN STAFF */
 
 /* SERVICIOS*/
-section.servicios .content-servicios{
-    padding: 0 20px 0 20px;
+section.servicios .content{
+    /* padding: 0 20px 0 20px; */
 }
 section.servicios::before{
     content: '';
@@ -388,26 +391,26 @@ section.servicios::before{
     background: #F7F7F7;
 }
 
-section.servicios .content-servicios{
+section.servicios .content{
     padding-bottom: 42px;
 }
-section.servicios .content-servicios h3{
+section.servicios .content h3{
     margin: 20px 0 0 0;
 }
-section.servicios .content-servicios figure.productos{
+section.servicios .content figure.productos{
     text-align: center;
     margin: 40px 0 0 0;
 }
-section.servicios .content-servicios figure.productos img{
+section.servicios .content figure.productos img{
     display: inline;
     max-width: 100%;
 }
 
-section.servicios .content-servicios figure.fletamento{
+section.servicios .content figure.fletamento{
     text-align: center;
     margin: 40px 0 0 0;
 }
-section.servicios .content-servicios figure.fletamento img{
+section.servicios .content figure.fletamento img{
     display: inline;
     max-width: 100%;
 }
@@ -529,7 +532,7 @@ section.reportes .content-reportes figure{
     margin: 0 auto;
     position: relative;
     top: 0;
-    width: 100%;
+    width: 90%;
     line-height: middle;
 }
 section.reportes .content-reportes figure img{
@@ -684,3 +687,20 @@ footer .create p a{
 }
 
 /*FIN FOOTER*/
+
+/* MEDIAS QUERIES */
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+    .content{
+        padding: 0 60px;
+    }
+    section.contacto form{
+        margin: 50px 0 60px 0;
+    }
+}
+/* ESCRITORIO */
+
+@media only screen and (min-width: 992px){
+    
+}
