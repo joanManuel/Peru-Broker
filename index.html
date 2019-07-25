@@ -18,31 +18,33 @@
 <body>   
 <!-- TOP - BARRA DE ARRIBA -->
    <header>
-        <div class="menu">
+       <div class="content">
+            <div class="menu">
 
-            <!-- Logo -->
-            <div class="logo">
-                    <figure class="img-logo">
-                        <img src="img/logo_img_perubroker.png" alt="logo PERU BROKER">
-                    </figure>
-                    <div class="text-logo">
-                        <h1>Peru Broker S A</h1>
-                    </div>
+                <!-- Logo -->
+                <div class="logo">
+                        <figure class="img-logo">
+                            <img src="img/logo_img_perubroker.png" alt="logo PERU BROKER">
+                        </figure>
+                        <div class="text-logo">
+                            <h1>Peru Broker S A</h1>
+                        </div>
+                </div>
+
+                <!-- MENU -->
+                <nav class="lista-menu">
+                    <div class="bar"></div>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li><a href="">Clientes</a></li>
+                        <li><a href="">Reportes</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+
             </div>
-
-            <!-- MENU -->
-            <nav class="lista-menu">
-                <div class="bar"></div>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Reportes</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-
         </div>
     </header>        
 <!-- FIN - BARRA DE ARRIBA -->
@@ -97,15 +99,21 @@
                     <div class="swiper-container tabs-content">
                         <div class="swiper-wrapper item">
                             <div class="swiper-slide">
-                                <p>Vinculados al comercio internacional desde 1949, y muy especialmente a la industria pesquera, Perú Broker S.A.  es hoy una de las empresas líderes en nuestro país en el sector de las representaciones y corretaje.</p>
-    
-                                <p>Entre nuestros clientes, tanto a nivel nacional como internacional, se encuentran tanto grandes multinacionales  así como empresas relativamente pequeñas y familiares. Tanto en un caso  como en el otro, nos centramos en trabajar exclusivamente con aquellas compañías que  demuestran responsabilidad y compromiso en sus  obligaciones contractuales. En base a los  comentarios que hemos recibido de nuestros proveedores y clientes a  lo largo de nuestra  dilatada trayectoria, hemos llegado a la absoluta seguridad de que brindamos un servicio de  primera categoría.</p>
-                                
-                                <p>Conocedores por décadas de las actividades económicas de nuestro país, nuestros contactos  van más allá del  sector pesquero (estamos centrados principalmente en harina y aceite de  pescado y congelado) e incluyen  segmentos de enorme consideración en la vida del Perú, como  son la minería, fletamentos, energía, azúcar,  café, sal marina y de mina, granos, legumbres,  aceites, grasas y otros.</p>
-                            
-                                <figure>
-                                    <img src="img/historia_logo_perubroker.png" alt="">
-                                </figure>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-12 col-xl-9">
+                                        <p>Vinculados al comercio internacional desde 1949, y muy especialmente a la industria pesquera, Perú Broker S.A.  es hoy una de las empresas líderes en nuestro país en el sector de las representaciones y corretaje.</p>
+            
+                                        <p>Entre nuestros clientes, tanto a nivel nacional como internacional, se encuentran tanto grandes multinacionales  así como empresas relativamente pequeñas y familiares. Tanto en un caso  como en el otro, nos centramos en trabajar exclusivamente con aquellas compañías que  demuestran responsabilidad y compromiso en sus  obligaciones contractuales. En base a los  comentarios que hemos recibido de nuestros proveedores y clientes a  lo largo de nuestra  dilatada trayectoria, hemos llegado a la absoluta seguridad de que brindamos un servicio de  primera categoría.</p>
+                                        
+                                        <p>Conocedores por décadas de las actividades económicas de nuestro país, nuestros contactos  van más allá del  sector pesquero (estamos centrados principalmente en harina y aceite de  pescado y congelado) e incluyen  segmentos de enorme consideración en la vida del Perú, como  son la minería, fletamentos, energía, azúcar,  café, sal marina y de mina, granos, legumbres,  aceites, grasas y otros.</p>
+                                    
+                                    </div>
+                                    <div class="col">
+                                        <figure>
+                                            <img src="img/historia_logo_perubroker.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="swiper-slide">
@@ -281,7 +289,7 @@
     
 <!-- SECCION DE REPORTES -->
     <section class=" reportes tables-page-section" ="service">
-            <div class="container content-reportes"><!-- INICIO-CONTENT -->
+            <div class="content content-reportes"><!-- INICIO-CONTENT -->
                 <div class="section_title text-center">
                     <h2>Reportes</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
@@ -515,11 +523,15 @@
 
 <!-- FOOTER -->
     <footer>
-        <div class="copy">
-            <p>Copyright 2019</p>
-        </div>
-        <div class="create">
-            <p>create by <a href="https://www.facebook.com/cyberzsoft/" target="_blan">CyberzSoft</a></p>
+        <div class="row">
+            <div class="col">
+                    <div class="copy">
+                        <p>Copyright 2019</p>
+                    </div>
+                    <div class="create">
+                        <p>create by <a href="https://www.facebook.com/cyberzsoft/" target="_blan">CyberzSoft</a></p>
+                    </div>
+            </div>
         </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>

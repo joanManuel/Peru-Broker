@@ -64,13 +64,16 @@ var tabContent = new Swiper('.tabs-content', {
   },
 });
 
-
+// STAF
 $(document).ready(function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.content-item', {
+    
+    
      slidesPerView: 'auto',
           spaceBetween: 20,
           centeredSlides: true,
+          
       breakpoints:{
        
        320: {
@@ -83,9 +86,11 @@ $(document).ready(function () {
   })
 });
 
+// CLIENTES
 $(document).ready(function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.content-item-clientes', {
+          loop: true,
           slidesPerView: 'auto',
           spaceBetween: 5,
           centeredSlides: true,
@@ -101,7 +106,7 @@ $(document).ready(function () {
   })
 });
 
-
+// MAPA
 
 $(document).ready(function () {
   
