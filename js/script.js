@@ -3,9 +3,24 @@
 	$('nav.lista-menu').on('click', function() {
         $('.bar').toggleClass('animate'),
         $('header .menu').toggleClass('color-header');
-	})
-})();
+  })
 
+
+});
+/* MENU FIJO */
+var windowHeight = 50;
+var barraAltura = $('.menu').innerHeight();
+
+$(window).scroll(function(){
+   var scroll = $(window).scrollTop();
+    if(scroll > windowHeight){
+        $('.menu').addClass('fixed');
+        // $('body').css({'margin-top': barraAltura+'px'});
+    }   else{
+        $('.menu').removeClass('fixed');
+        $('body').css({'margin-top': '0px'});
+    }
+});
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ No hace parte del la hamburquesa, Solo oculta la lista
 $(document).ready(function() {
 	// ↓↓↓↓ Menu hamburguesa

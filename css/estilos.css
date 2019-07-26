@@ -743,22 +743,26 @@ footer .create p a{
      right:0px;
     top: 70px;
     }
-    
-    header .menu .logo{
-        margin-left: 0;
+    .fixed{
+        position: fixed!important;
+        top: 14.5px!important;
     }
-    header .menu .logo .img-logo{
+    header .menu .logo{
+        margin-left: 30px;
+        width: auto;
+    }
+    header .menu .logo figure.img-logo{
       
         
     }
-    header .menu .logo .img-logo img{
-   
+    header .menu .logo figure.img-logo img{
+        width: 80px;
     }
     header .menu .logo .text-logo{
-      
+     margin-left: 40px; 
     }
     header .menu .logo .text-logo h1{
- 
+        font-size: 20px;
         
     }
     /* MENU */
@@ -784,7 +788,8 @@ nav.lista-menu{
      
     background: none;
     top: 0;
-    left: 180px;
+    /* left: 20%; */
+    left: 75px;
     font-size: 18px;
   }
   nav.lista-menu ul li{
@@ -796,6 +801,10 @@ nav.lista-menu{
   }
     section.hero .idioma{
         top: 30px;
+        right: 50px;
+    }
+    section.hero .chat{
+        right: 60px;
     }
     
     .content{
