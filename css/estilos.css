@@ -700,9 +700,14 @@ footer .create p a{
 
 /* TABLET */
 @media only screen and (min-width: 768px){
+    .content-menu{
+        padding: 0;
+        
+    }
+    
     .content{
-        margin: 0 auto;
-        padding: 0 60px;
+        
+        padding: 0 40px;
     }
     section.nosotros figure img{
         width: 35%;
@@ -713,14 +718,107 @@ footer .create p a{
 }
 /* ESCRITORIO */
 @media only screen and (min-width: 992px){
+    
     .content{
+        padding: 0;
+        padding: 0 70px;
         width: 100%;
         max-width: 1600px;
+        margin: 0 auto;
     }
+
+    .content-header{
+    
+    }
+    header{   
+       /* background: blue; */
+    }
+    header .menu{
+     position: absolute;
+     background: none;
+     text-align: center;
+     width: 944px;
+     margin: 0 auto; 
+     left:0px; 
+     right:0px;
+    top: 70px;
+    }
+    
+    header .menu .logo{
+        margin-left: 0;
+    }
+    header .menu .logo .img-logo{
+      
+        
+    }
+    header .menu .logo .img-logo img{
+   
+    }
+    header .menu .logo .text-logo{
+      
+    }
+    header .menu .logo .text-logo h1{
+ 
+        
+    }
+    /* MENU */
+/*-- MENU MOBILE--*/
+
+nav.lista-menu{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+ 
+  nav.lista-menu .bar,
+  nav.lista-menu .bar:after,
+  nav.lista-menu .bar:before {
+      display: none;
+      right: 0;
+      
+  }
+  nav.lista-menu ul{
+      display: inline;
+      position: relative;
+     
+    background: none;
+    top: 0;
+    left: 180px;
+    font-size: 18px;
+  }
+  nav.lista-menu ul li{
+     
+      display: inline;
+  }
+  nav.lista-menu ul li a{
+
+  }
+    section.hero .idioma{
+        top: 30px;
+    }
+    
+    .content{
+        /* width: 100%;
+        max-width: 1600px; */
+    }
+    section.nosotros figure{
+        margin: 0;
+        width: 100%;
+    }
+    section.nosotros figure img{
+  
+    }
+
+
 }
 
 /* ESCRITORIO EXTRA LARGE */
 @media only screen and (min-width: 1200px){
+    section.nosotros figure img{
+        width: 100%;
+         }
+    /*
     .content-header{
     
     }
@@ -755,6 +853,7 @@ footer .create p a{
     /* MENU */
 /*-- MENU MOBILE--*/
 
+/*
 nav.lista-menu{
     position: relative;
     width: auto;
@@ -851,7 +950,7 @@ nav.lista-menu{
       
   }
      */
-    
+    /*
     .content{
         width: 100%;
         max-width: 1600px;
@@ -863,6 +962,6 @@ nav.lista-menu{
     section.nosotros figure img{
    width: 100%;
     }
-
+*/
     
 }
