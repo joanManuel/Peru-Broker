@@ -7,7 +7,24 @@
 
 
 });
+
+let menu = document.getElementById("menu");
+// let imglogo = document.getElementsByClassName("menu");
+let sticky = menu.offsetTop;
+
+function checkPosition(){
+  if(window.pageYOffset >= sticky){
+    menu.classList.add("fixed");
+  }else{
+    menu.classList.remove("fixed");
+  }
+}
+window.onscroll = function(){
+  checkPosition();
+}
 /* MENU FIJO */
+
+/*
 var windowHeight = 50;
 var barraAltura = $('.menu').innerHeight();
 
@@ -21,6 +38,8 @@ $(window).scroll(function(){
         $('body').css({'margin-top': '0px'});
     }
 });
+
+*/
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ No hace parte del la hamburquesa, Solo oculta la lista
 $(document).ready(function() {
 	// ↓↓↓↓ Menu hamburguesa
