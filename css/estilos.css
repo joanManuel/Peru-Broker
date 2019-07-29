@@ -39,9 +39,7 @@ section.nosotros h2{
     margin: 0;
 }
 /* LOGO */
-.content-header{
-    
-}
+
 header{
     
    
@@ -55,7 +53,12 @@ header .menu{
     display: flex;
     align-items: center;
 }
-
+header .menu .content-menu{
+    display: inherit;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+}
 header .menu .logo{
 width: 233px;
 display: flex;
@@ -91,9 +94,12 @@ header .menu .logo .text-logo h1{
 nav.lista-menu{
   margin: 0 20px 0 0;
   width: 35px;
-  height: 26px;
+  height: 75px;
   cursor: pointer;
   margin-left: auto;
+  display: flex;
+  align-items: center;
+
 }
 nav.lista-menu .bar,
 nav.lista-menu .bar:after,
@@ -105,6 +111,7 @@ nav.lista-menu .bar:before {
 
 /* Animación del menu movil */
 nav.lista-menu .bar {
+    margin-top: -10px;
     position: relative;
     transform: translateY(9px);
     background: white;
@@ -734,16 +741,28 @@ footer .create p a{
        /* background: blue; */
     }
     header .menu{
+        position: absolute;
+        background: none;
+        top: 70px;
+    }
+    header .menu .content-menu{
      position: absolute;
      background: none;
-     text-align: center;
+     /* text-align: center; */
      width: 944px;
      margin: 0 auto; 
      left:0px; 
      right:0px;
-    top: 70px;
+    /* top: 70px; */
     }
-    
+    header .menu .content-menu{
+        display: inherit;
+        position: inherit;
+        height: inherit;
+        /* width: inherit; */
+        align-items: inherit;
+        /* top: 0; */
+    }
     header .menu .logo{
         margin-left: 30px;
         width: auto;
@@ -824,20 +843,49 @@ nav.lista-menu{
         width: 100%!important;
         /* top: 14.5px!important; */
     }
+    
+    .fixed .content-menu{
+         top: 0!important;
+    }
     .fixed .logo{
-
+        /* margin-left: 80px!important; */
     }
     .fixed .logo figure img{
         width: 50px!important;
     }
-
+    .fixed .logo .text-logo{
+        /* margin-left: 10px!important; */
+    }
+    .fixed .logo .text-logo h1{
+        font-size: 18px!important;
+    }
+    .fixed nav.lista-menu{
+        /* left: 10px!important;
+        width: 800px!important; */
+    }
+    
 }
 
 /* ESCRITORIO EXTRA LARGE */
 @media only screen and (min-width: 1200px){
-    section.nosotros figure img{
+    /* section.nosotros figure img{
         width: 100%;
-         }
-   
+    }
+    .fixed .logo{
+        position: relative;
+        left: 20px!important;
+    }
+   .fixed nav.lista-menu{
+       left:  55px!important
+   } */
+}
+@media only screen and (min-width: 1400px){
+ /* .fixed .logo{
+        position: relative;
+        left: 120px!important;
+    }
+   .fixed nav.lista-menu{
+       left:  380px!important
+   } */
     
 }
