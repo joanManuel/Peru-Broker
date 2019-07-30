@@ -808,6 +808,7 @@ nav.lista-menu{
     /* left: 20%; */
     left: 75px;
     font-size: 18px;
+    overflow-y: hidden;
   }
   nav.lista-menu ul li{
      
@@ -872,6 +873,12 @@ nav.lista-menu{
 
 /* ESCRITORIO EXTRA LARGE */
 @media only screen and (min-width: 1200px){
+    header .menu .content-menu{
+        /* width: 1100px; */
+    }
+    .fixed nav.lista-menu{
+        /* left: 20%!important; */
+    }
     /* section.nosotros figure img{
         width: 100%;
     }
