@@ -81,7 +81,11 @@ var tabContent = new Swiper('.tabs-content', {
      slidesPerView: 'auto',
           spaceBetween: 20,
           centeredSlides: true,
-          
+          autoplay: {
+            delay: 2500,
+            // disableOnInteraction: false,
+            // stopOnLastSlide: true,
+        },    
       breakpoints:{
        
        320: {
@@ -98,18 +102,23 @@ var tabContent = new Swiper('.tabs-content', {
 
   //initialize swiper when document ready
   var swiper = new Swiper('.content-item-clientes', {
-          loop: true,
-          slidesPerView: 'auto',
-          spaceBetween: 5,
-          centeredSlides: true,
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+          delay: 2500,
+          // disableOnInteraction: false,
+          // stopOnLastSlide: true,
+      },
       breakpoints:{
-       
-       320: {
-          // slidesPerView: 'auto',
-          // spaceBetween: 30,
-          // centeredSlides: true,
-        }
-      }
+          320: {
+
+            // slidesPerView: 'auto',
+            // spaceBetween: 30,
+            // centeredSlides: true,
+        },
+      },
     
   })
   // MAPA
