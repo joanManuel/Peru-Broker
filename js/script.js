@@ -16,7 +16,6 @@ $(function () {
   var point = 992;
   if(ancho >= point){
     /* MENU FIJO */
-    // let menu = document.getElementById("menu");
     let menu = document.getElementById("menu");
     let sticky = menu.offsetTop;
 
@@ -48,7 +47,6 @@ $(function () {
     });
  
   //SECCION NOSOTROS - TABS
-  // var tabs = document.querySelector('.tabs-buttons ');
   
   var tabButtons = new Swiper('.tabs-buttons', {
     slidesPerView: 'auto',

@@ -831,6 +831,9 @@ nav.lista-menu{
         margin: 0;
         width: 100%;
     }
+    section.nosotros .swiper-container{
+        margin-top: 10px;
+    }
     section.nosotros figure img{
   
     }
@@ -879,6 +882,14 @@ nav.lista-menu{
 
     section.nosotros figure img{
         width: 90%;
+    }
+    section.contacto .content-mapa{
+        margin-top: 20px;
+    }
+    section.contacto form{
+        width: 100%;
+        max-width: 510px;
+        margin: 20px auto 50px auto;
     }
 }
 @media only screen and (min-width: 1400px){
