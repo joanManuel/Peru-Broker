@@ -18,6 +18,7 @@ $(function () {
   $('.goto').on('click', function(){
     var to = $(this).attr('href'); // $(this) is the clicked link. We store its href.
     $('nav.lista-menu ul').toggle();
+    $('header .menu').removeClass('color-header');
     $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
     $('section').removeClass("active");
     $('section' + to).addClass("active");
