@@ -1,18 +1,21 @@
 $(function () {
   
   AOS.init();
-  //Animación del navbar(menu)
-	$('nav.lista-menu').on('click', function() {
-        $('.bar').toggleClass('animate'),
-        $('header .menu').toggleClass('color-header');
-  })
 
-  // Oculta el menu
-  $('nav.lista-menu').on('click', function() {
-    $('nav.lista-menu ul').toggle();
-
-    // $(this).toggle();
-  })
+  //Animación del navbar(menu) en pantalla movil
+  if(ancho <= point){
+    $('nav.lista-menu').on('click', function() {
+          $('.bar').toggleClass('animate'),
+          $('header .menu').toggleClass('color-header');
+    })
+  
+    // Oculta el menu
+    $('nav.lista-menu').on('click', function() {
+      $('nav.lista-menu ul').toggle();
+  
+    })
+  }
+  
   /**Ancho de pantalla */
   var ancho = $(window).width();    
   var point = 992;
