@@ -1,14 +1,5 @@
 $(function () {
-  $('.goto').on('click', function(){
-    var to = $(this).attr('href'); // $(this) is the clicked link. We store its href.
-    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
-    $('section').removeClass("active");
-    $('section' + to).addClass("active");
-    $('.goto').removeClass("active");
-    $(this).addClass("active");
-    return false;
-	});
-
+  
  
   //Animación del navbar(menu)
 	$('nav.lista-menu').on('click', function() {
@@ -19,7 +10,22 @@ $(function () {
   // Oculta el menu
   $('nav.lista-menu').on('click', function() {
     $('nav.lista-menu ul').toggle();
+
+    // $(this).toggle();
   })
+
+  /* Efecto en el menu SCROLL */
+  $('.goto').on('click', function(){
+    var to = $(this).attr('href'); // $(this) is the clicked link. We store its href.
+    $('nav.lista-menu ul').toggle();
+    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+    $('section').removeClass("active");
+    $('section' + to).addClass("active");
+    $('.goto').removeClass("active");
+    $(this).addClass("active");
+    return false;
+	});
+
 
   var ancho = $(window).width();    
   var point = 992;
