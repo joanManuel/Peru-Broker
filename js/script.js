@@ -1,6 +1,6 @@
 $(function () {
   
- 
+  AOS.init();
   //Animación del navbar(menu)
 	$('nav.lista-menu').on('click', function() {
         $('.bar').toggleClass('animate'),
