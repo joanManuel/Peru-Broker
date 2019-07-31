@@ -19,8 +19,7 @@ $(function () {
     // let menu = document.getElementById("menu");
     let menu = document.getElementById("menu");
     let sticky = menu.offsetTop;
-    console.log(sticky);
-    
+
     function checkPosition(){
       if(window.pageYOffset >= sticky){
         menu.classList.add("fixed");
@@ -50,14 +49,14 @@ $(function () {
  
   //SECCION NOSOTROS - TABS
   var tabs = document.querySelector('.tabs-buttons');
-
+  
   var tabButtons = new Swiper('.tabs-buttons', {
+   
     slidesPerView: 'auto',
     freeMode: true,
     mousewheelControl: true,
     onTap: function(swiper, event) {
       if ( event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab') ) {
-        
         event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
         event.target.classList.add('active-tab');
         tabContent.slideTo(swiper.clickedIndex);
@@ -65,12 +64,15 @@ $(function () {
     }
   });
 
-
-var tabContent = new Swiper('.tabs-content', {
-  autoHeight:true,
-  draggable:false,
-  mousewheelControl: false
-});
+    var tabContent = new Swiper('.tabs-content', {
+      onSlideChangeStart: function(swiper, event) {
+        tabs.children[swiper.previousIndex].classList.remove('active');
+        tabs.children[swiper.activeIndex].classList.add('active');
+      },
+      autoHeight:true,
+      draggable:false,
+      mousewheelControl: false
+    });
 
 // STAF
 
@@ -95,7 +97,7 @@ var tabContent = new Swiper('.tabs-content', {
         }
       }
     
-  })
+  });
 
 
   // CLIENTES
@@ -120,7 +122,7 @@ var tabContent = new Swiper('.tabs-content', {
         },
       },
     
-  })
+  });
   // MAPA
     var map = L.map('map').setView([-12.126303, -77.016515], 17);
 
