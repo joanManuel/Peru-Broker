@@ -48,31 +48,28 @@ $(function () {
     });
  
   //SECCION NOSOTROS - TABS
-  var tabs = document.querySelector('.tabs-buttons');
+  // var tabs = document.querySelector('.tabs-buttons ');
   
   var tabButtons = new Swiper('.tabs-buttons', {
-   
     slidesPerView: 'auto',
     freeMode: true,
     mousewheelControl: true,
-    onTap: function(swiper, event) {
-      if ( event.target.classList.contains('swiper-slide') && !event.target.classList.contains('active-tab') ) {
-        event.target.parentElement.querySelector('.active-tab').classList.remove('active-tab');
-        event.target.classList.add('active-tab');
-        tabContent.slideTo(swiper.clickedIndex);
-      }
-    }
   });
 
-    var tabContent = new Swiper('.tabs-content', {
-      onSlideChangeStart: function(swiper, event) {
-        tabs.children[swiper.previousIndex].classList.remove('active');
-        tabs.children[swiper.activeIndex].classList.add('active');
-      },
-      autoHeight:true,
-      draggable:false,
-      mousewheelControl: false
-    });
+/* TABS */
+$('.tabs-buttons ul li a:first').addClass('active-tab');
+$('.contenido-item .item:first').show();
+
+$('.tabs-buttons a').on('click',function(){
+  $('.tabs-buttons ul li a').removeClass('active-tab');
+  $('.ocultar').hide();
+  $(this).addClass('active-tab');
+
+  var enlace = $(this).attr('href');
+    $(enlace).fadeIn(500);
+  return false;
+});
+
 
 // STAF
 

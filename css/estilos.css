@@ -294,7 +294,6 @@ section.nosotros::before{
     
     .tabs-buttons {
         height: auto;
-        box-shadow: inset 0 -2px #e6e6e6;
     }
     .tabs-buttons .swiper-wrapper {
         display: flex;
@@ -309,7 +308,17 @@ section.nosotros::before{
     }
     .tabs-buttons .active-tab {
         opacity: 1;
-        border-bottom-color: red;
+        
+        border-bottom: 1px solid red;
+        /* background: blue; */
+        
+        opacity: 1!important;
+    }
+    .tabs-buttons .swiper-wrapper .swiper-slide a{
+        color: #05091D;
+        opacity: .25;
+        padding: 10px 22.5px;
+        /* background: green; */
     }
     /*FIN TABS*/
     .nosotros ul li{
@@ -331,6 +340,9 @@ section.nosotros::before{
         height: auto;
         display: block;
         margin: 0 auto;
+    }
+    section.nosotros .ocultar{
+        display: none;
     }
 /*FIN NOSOTROS*/
 
