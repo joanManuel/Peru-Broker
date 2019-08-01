@@ -482,6 +482,7 @@ section.reportes .select {
     width: 20em;
     height: 3em;
     line-height: 3;
+    color: white;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -509,7 +510,7 @@ section.reportes .select {
   }
   /* Transition */
   section.reportes .select:hover::after {
-    color:white;
+    color:yellow;
   }
   section.reportes h3{
       margin-top: 40px;
@@ -760,6 +761,9 @@ footer .create p a{
     h3{
         margin-top: 10px;
     }
+    .active-menu{
+        border-bottom: 2px solid red!important;
+    }
     .content{
         padding: 0;
         padding: 0 70px;
@@ -812,6 +816,9 @@ nav.lista-menu{
     width: auto;
     height: auto;
     margin: 0;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
   }
  
   nav.lista-menu .bar,

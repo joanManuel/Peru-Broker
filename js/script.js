@@ -1,4 +1,5 @@
 $(function () {
+  /* Par alos efectos cuando se haga scroll */
   AOS.init();
 
  /**Ancho de pantalla */
@@ -19,15 +20,22 @@ $(function () {
     })
   }
   
-  
   /* Efecto en el menu SCROLL */
   $('.goto').on('click', function(){
-    var to = $(this).attr('href'); // $(this) is the clicked link. We store its href.
+    var to = $(this).attr('href'); 
+
+    // $('header ul li a:first').removeClass('active-menu');
+    $('header ul li a').removeClass('active-menu');
+
     if(ancho <= point){/**Para que funcione solo en pantalla chica */
       $('nav.lista-menu ul').toggle();
+      
       $('header .menu').removeClass('color-header');
     }/* Fin */
     $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+    
+    $(this).addClass('active-menu');
+    $('header ul li a:first').removeClass('active-menu');
     
     return false;
 	});
@@ -148,8 +156,4 @@ $('.tabs-buttons a').on('click',function(){
     L.marker([-12.126303, -77.016515]).addTo(map)
         .bindPopup('PERU BROKER S.A.')
         .openPopup();
-  
-
-  
-
 });/* FIN */
