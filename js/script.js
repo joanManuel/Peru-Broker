@@ -1,7 +1,6 @@
 $(function () {
   
-  AOS.init();
-
+ 
   //Animación del navbar(menu) en pantalla movil
   if(ancho <= point){
     $('nav.lista-menu').on('click', function() {
@@ -32,6 +31,7 @@ $(function () {
     return false;
 	});
 
+  AOS.init();
 
   
   if(ancho >= point){
