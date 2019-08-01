@@ -1,63 +1,99 @@
+/*Efecto cuando se haga scroll */
+$(function() {
+  
+/**Ancho de pantalla */
+var ancho = $(window).width();    
+var point = 992;
+
+ //Animación del navbar(menu) en pantalla movil
+ if(ancho <= point){
+   $('nav.lista-menu').on('click', function() {
+         $('.bar').toggleClass('animate'),
+         $('header .menu').toggleClass('color-header');
+   })
+   // Oculta el menu
+   $('nav.lista-menu').on('click', function() {
+     $('nav.lista-menu ul').toggle();
+ 
+   })
+ }
+ 
+ /* Efecto en el menu SCROLL */
+ /*
+ $('.goto').on('click', function(){
+   var to = $(this).attr('href'); 
+
+   $('header ul li a').removeClass('active-menu');
+
+   if(ancho <= point){
+       $('nav.lista-menu ul').toggle();
+       $('.bar').toggleClass('animate'),
+       $('header .menu').removeClass('color-header');
+   }
+   
+   $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+   $(this).addClass('active-menu');
+   $('header ul li a:first').removeClass('active-menu');
+
+   return false;
+ });
+
+ */
+ if(ancho >= point){
+   /* MENU FIJO */
+   let menu = document.getElementById("menu");
+   let sticky = menu.offsetTop;
+
+   function checkPosition(){
+     if(window.pageYOffset >= sticky){
+       menu.classList.add("fixed");
+     }else{
+       menu.classList.remove("fixed");
+     }
+   }
+   window.onscroll = function(){
+     checkPosition();
+   }
+ }
+
+$(document).on("scroll", scroll);
+  
+menu = $('header ul li a');
+
+menu.filter(':first').addClass('active-menu'); //ilk linke aktif class'ı ata
+
+menu.on('click', function() {
+  var to = $(this).attr('href'); 
+
+  $('header ul li a').removeClass('active-menu');
+  $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+   $(this).addClass('active-menu');
+   $('header ul li a:first').removeClass('active-menu');
+ 
+  return false;
+});
+});
+function scroll(event){
+  var scrollPos = $(document).scrollTop();
+  menu.each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if ((refElement.position().top)-80 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        
+          menu.removeClass("active-menu");
+          currLink.addClass("active-menu");
+      }
+      else{
+          currLink.removeClass("active-menu");
+      }
+  });
+}
+
 $(function () {
   /* Par alos efectos cuando se haga scroll */
   AOS.init();
 
- /**Ancho de pantalla */
- var ancho = $(window).width();    
- var point = 992;
-
-  //Animación del navbar(menu) en pantalla movil
-  if(ancho <= point){
-    $('nav.lista-menu').on('click', function() {
-          $('.bar').toggleClass('animate'),
-          $('header .menu').toggleClass('color-header');
-    })
-  
-    // Oculta el menu
-    $('nav.lista-menu').on('click', function() {
-      $('nav.lista-menu ul').toggle();
-  
-    })
-  }
-  
-  /* Efecto en el menu SCROLL */
-  $('.goto').on('click', function(){
-    var to = $(this).attr('href'); 
-
-    // $('header ul li a:first').removeClass('active-menu');
-    $('header ul li a').removeClass('active-menu');
-
-    if(ancho <= point){/**Para que funcione solo en pantalla chica */
-      $('nav.lista-menu ul').toggle();
-      $('.bar').toggleClass('animate'),
-      $('header .menu').removeClass('color-header');
-    }/* Fin */
-    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
-    
-    $(this).addClass('active-menu');
-    $('header ul li a:first').removeClass('active-menu');
-
-    return false;
-	});
-
-  
-  
-  if(ancho >= point){
-    /* MENU FIJO */
-    let menu = document.getElementById("menu");
-    let sticky = menu.offsetTop;
-
-    function checkPosition(){
-      if(window.pageYOffset >= sticky){
-        menu.classList.add("fixed");
-      }else{
-        menu.classList.remove("fixed");
-      }
-    }
-    window.onscroll = function(){
-      checkPosition();
-    }
-  }
+ 
 
   // BOTON PARA SUBIR
   $('.btn-up').click(function(){
