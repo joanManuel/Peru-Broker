@@ -1,6 +1,10 @@
 $(function () {
-  
- 
+  AOS.init();
+
+ /**Ancho de pantalla */
+ var ancho = $(window).width();    
+ var point = 992;
+
   //Animación del navbar(menu) en pantalla movil
   if(ancho <= point){
     $('nav.lista-menu').on('click', function() {
@@ -15,10 +19,7 @@ $(function () {
     })
   }
   
-  /**Ancho de pantalla */
-  var ancho = $(window).width();    
-  var point = 992;
-
+  
   /* Efecto en el menu SCROLL */
   $('.goto').on('click', function(){
     var to = $(this).attr('href'); // $(this) is the clicked link. We store its href.
@@ -31,8 +32,7 @@ $(function () {
     return false;
 	});
 
-  AOS.init();
-
+  
   
   if(ancho >= point){
     /* MENU FIJO */
