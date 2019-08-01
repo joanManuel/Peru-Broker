@@ -29,14 +29,14 @@ $(function () {
 
     if(ancho <= point){/**Para que funcione solo en pantalla chica */
       $('nav.lista-menu ul').toggle();
-      
+      $('.bar').toggleClass('animate'),
       $('header .menu').removeClass('color-header');
     }/* Fin */
     $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
     
     $(this).addClass('active-menu');
     $('header ul li a:first').removeClass('active-menu');
-    
+
     return false;
 	});
 
