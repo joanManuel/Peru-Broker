@@ -1,78 +1,63 @@
 /*Efecto cuando se haga scroll */
 $(function() {
   
-/**Ancho de pantalla */
-var ancho = $(window).width();    
-var point = 992;
+  /**Ancho de pantalla */
+  var ancho = $(window).width();    
+  var point = 992;
 
- //Animación del navbar(menu) en pantalla movil
- if(ancho <= point){
-   $('nav.lista-menu').on('click', function() {
-         $('.bar').toggleClass('animate'),
-         $('header .menu').toggleClass('color-header');
-   })
-   // Oculta el menu
-   $('nav.lista-menu').on('click', function() {
-     $('nav.lista-menu ul').toggle();
- 
-   })
- }
- 
- /* Efecto en el menu SCROLL */
- /*
- $('.goto').on('click', function(){
-   var to = $(this).attr('href'); 
-
-   $('header ul li a').removeClass('active-menu');
-
-   if(ancho <= point){
-       $('nav.lista-menu ul').toggle();
-       $('.bar').toggleClass('animate'),
-       $('header .menu').removeClass('color-header');
-   }
-   
-   $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
-   $(this).addClass('active-menu');
-   $('header ul li a:first').removeClass('active-menu');
-
-   return false;
- });
-
- */
- if(ancho >= point){
-   /* MENU FIJO */
-   let menu = document.getElementById("menu");
-   let sticky = menu.offsetTop;
-
-   function checkPosition(){
-     if(window.pageYOffset >= sticky){
-       menu.classList.add("fixed");
-     }else{
-       menu.classList.remove("fixed");
-     }
-   }
-   window.onscroll = function(){
-     checkPosition();
-   }
- }
-
-$(document).on("scroll", scroll);
+  //Animación del navbar(menu) en pantalla movil
+  if(ancho <= point){
+    $('nav.lista-menu').on('click', function() {
+          $('.bar').toggleClass('animate'),
+          $('header .menu').toggleClass('color-header');
+    })
+    // Oculta el menu
+    $('nav.lista-menu').on('click', function() {
+      $('nav.lista-menu ul').toggle();
   
-menu = $('header ul li a');
-
-menu.filter(':first').addClass('active-menu'); //ilk linke aktif class'ı ata
-
-menu.on('click', function() {
-  var to = $(this).attr('href'); 
-
-  $('header ul li a').removeClass('active-menu');
-  $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
-   $(this).addClass('active-menu');
-   $('header ul li a:first').removeClass('active-menu');
+    })
+  }
  
-  return false;
+  /* Pantalla de escritorio */
+  if(ancho >= point){
+    /* MENU FIJO */
+    let menu = document.getElementById("menu");
+    let sticky = menu.offsetTop;
+
+    function checkPosition(){
+      if(window.pageYOffset >= sticky){
+        menu.classList.add("fixed");
+      }else{
+        menu.classList.remove("fixed");
+      }
+    }
+    window.onscroll = function(){
+      checkPosition();
+    }
+  }
+
+  /* EFECTO PARA CUANDO SE HAGA SCROLL */
+  $(document).on("scroll", scroll);
+    
+  menu = $('header ul li a');
+
+  menu.on('click', function() {
+    var to = $(this).attr('href'); 
+
+    $('header ul li a').removeClass('active-menu');
+    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+    if(ancho <= point){
+        $('nav.lista-menu ul').toggle();
+        $('.bar').toggleClass('animate'),
+        $('header .menu').removeClass('color-header');
+    }
+    $(this).addClass('active-menu');
+    $('header ul li a:first').removeClass('active-menu');
+  
+    return false;
+  });
 });
-});
+
 function scroll(event){
   var scrollPos = $(document).scrollTop();
   menu.each(function () {
@@ -92,8 +77,6 @@ function scroll(event){
 $(function () {
   /* Par alos efectos cuando se haga scroll */
   AOS.init();
-
- 
 
   // BOTON PARA SUBIR
   $('.btn-up').click(function(){
@@ -118,27 +101,23 @@ $(function () {
     mousewheelControl: true,
   });
 
-/* TABS */
-$('.tabs-buttons ul li a:first').addClass('active-tab');
-$('.contenido-item .item:first').show();
+  /* TABS */
+  $('.tabs-buttons ul li a:first').addClass('active-tab');
+  $('.contenido-item .item:first').show();
 
-$('.tabs-buttons a').on('click',function(){
-  $('.tabs-buttons ul li a').removeClass('active-tab');
-  $('.ocultar').hide();
-  $(this).addClass('active-tab');
+  $('.tabs-buttons a').on('click',function(){
+    $('.tabs-buttons ul li a').removeClass('active-tab');
+    $('.ocultar').hide();
+    $(this).addClass('active-tab');
 
-  var enlace = $(this).attr('href');
-    $(enlace).fadeIn(500);
-  return false;
-});
-
+    var enlace = $(this).attr('href');
+      $(enlace).fadeIn(500);
+    return false;
+  });
 
 // STAF
-
   //initialize swiper when document ready
   var swiper = new Swiper('.content-item', {
-    
-    
      slidesPerView: 'auto',
           spaceBetween: 20,
           centeredSlides: true,
