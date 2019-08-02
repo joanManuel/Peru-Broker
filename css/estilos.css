@@ -891,6 +891,7 @@ nav.lista-menu{
         top: 0!important;
         background: rgba(23, 41, 131,.9)!important;
         width: 100%!important;
+        box-shadow: 0 0 10px rgba(0,0,0,.5)!important;
     }
     
     .fixed .content-menu{
